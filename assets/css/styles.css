@@ -171,7 +171,7 @@ a {
 #slider {
     position: relative;
     margin-top: 46px;
-    background: url(./assets/img/chicago.jpg) top center / cover no-repeat ;
+    background: url(/W3-band/assets/img/chicago.jpg) top center / cover no-repeat ;
     padding-top: 50%;
     
 }
