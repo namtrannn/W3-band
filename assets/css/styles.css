@@ -1,0 +1,568 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* comon */
+.clear {
+    clear: both;
+}
+
+.text_while {
+    color: #fff !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.pull-right {
+    float: right;
+}
+
+.btn {
+    background-color: #000;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #ccc !important;
+    color: #000 !important;
+    cursor: pointer;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    padding-left: 8px;
+    padding-right: 8px;
+    float: left;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-third {
+    width: 33.3333%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+/* main */
+#main {
+
+}
+
+#header {
+    position: fixed;
+    height: 46px;
+    width: 100%;
+    background-color: #000;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+#nav {
+   display: inline-block;
+}
+
+#nav > li > a{
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#nav li a {
+    text-decoration: none;
+    
+}
+
+#nav li {
+    display: inline-block;
+    padding: 0px 24px;
+    position: relative;
+}
+
+a {
+    line-height: 46px;
+}
+
+#nav li:hover {
+    background-color: #ccc;
+    
+}
+
+#nav .sub_nav {
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    display: none;
+    box-shadow: 0 0 10px rgb(0 , 0, 0, 0.3) ;
+}
+
+#nav .sub_nav a {
+    color: #000;
+}
+
+#nav .sub_nav li {
+    display: block;
+    padding-left: 16px;
+}
+
+#nav li:hover .sub_nav {
+    display: block;
+}
+
+#nav .nav_arrow_down {
+    font-size: 14px;
+}
+
+#header .search {
+    float: right;
+}
+
+#header .nav_search {
+    font-size: 20px;
+    line-height: 46px;
+    color: #fff;
+    padding: 0 21px;
+    font-weight: 500;
+}
+
+#header .search:hover .nav_search {
+    background-color: #f44336!important;
+    display: block;
+    color: #fff!important;;
+    cursor: pointer;
+}
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    background: url(/assets/img/chicago.jpg) top center / cover no-repeat ;
+    padding-top: 50%;
+    
+}
+
+#slider .text_content {
+    position: absolute;
+    left: 50%;
+    bottom: 48px;
+    color: #fff;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#slider .text_heading {
+    margin-bottom: 25px;
+    line-height: 36px;
+    font-size: 24px;
+}
+
+#slider .sub_heading {
+    font-size: 16px;
+}
+
+#content .content_section { 
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0 112px;
+}
+
+#content .section_heading {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+#content .section_sub_heading {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 15px;
+    opacity: 0.6;
+    font-style: italic;
+
+}
+
+#content .about {
+    margin-top: 30px;
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 15px;
+}
+
+#content .member {
+    padding: 32px 0px;
+}
+
+#content .member_name {
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+#content .member_img {
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+#content .tour_section {
+    background-color: #000;
+    padding-bottom: 48px;
+}
+
+#content .tour_section .tickes_list {
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.tour_section .tickes_list li {
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 0 11px 16px;
+    border-bottom: #0001 1px solid;
+    list-style: none;
+}
+
+#content .tour_section .Sold_out {
+    background-color: #f44336;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+#content .tour_section .quantyti {
+    float: right;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    width: 24px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    margin-right: 32px;
+}
+
+.plance_list {
+    margin-top: 32px;
+}
+
+.plance_item {
+    width: calc(100% / 3);
+}
+
+.plance_img {
+    width: 100%;
+    display: block;
+}
+
+.plance_img:hover {
+    opacity: 0.7;
+}
+
+.plance_content {
+    background-color: #fff;
+    padding: 16px;
+    display: block;
+}
+
+.plance_heading {
+    padding-top: 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.plance_time {
+    margin-top: 15px;
+    font-size: 15px;
+    opacity: 0.7;
+}
+
+.plance_desc {
+    margin: 15px 0px;
+    font-size: 15px;
+}
+
+
+/* ------------------CONTACT------------- */
+
+.contact-content {
+    margin-top: 48px;
+}
+
+#footer {
+
+
+}
+
+/*----------- modal -------------------*/
+
+
+.modal {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: rgb(0 , 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    position: relative;
+    min-height: 400px;
+    max-width: calc(100% - 32px);
+    animation: modalFadeIn ease 0.5s;
+}
+
+.moder-header {
+    font-size: 30px;
+    padding: 48px 0px;
+    background-color: #009688;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    letter-spacing: 6px;
+}
+.modal-header-icon {
+    margin-right: 8px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 12px;
+    padding: 12px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal-body {
+    padding: 16px;
+    font-size: 15px;
+}
+
+.modal-label {
+    display: block;
+    padding: 3px 0;
+}
+
+.modal-input {
+    font-size: 15px;
+    width: 100%;
+    padding: 9px 8px ;
+    margin: 30px 0 15px 0;
+    border: 1px solid #ccc;
+}
+
+.modal-button {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 15px;
+    background-color: #009688;
+    border: none;
+    color: #fff;
+    padding: 18px 0;
+    cursor: pointer;
+}
+
+.modal-button:hover {
+    opacity: 0.8;
+}
+
+.modal-footer {
+    font-size: 15px;
+    padding: 16px;
+    text-align: right;
+}
+
+.contact_section {
+    width: 800px;
+    min-height: 40px;
+    background-color: #fff;
+    padding: 64px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.contact-header .heading {   
+    font-size: 30px;
+    font-weight: 400;
+    margin: 10px 0px;
+    letter-spacing: 4px;
+    padding: 6px 0;
+}
+
+.contact-header .sub-heading {
+    font-size: 15px;
+    color: #000;
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+
+.contact-content {
+    padding: 32px 0px 16px 0px;
+}
+
+.content-left {
+    float: left;
+    font-size: 18px;
+    color: #000;
+}
+.contact-content .left {
+    padding: 4px 0;
+}
+
+.content-right {
+    float: right;
+}
+.contact-icon {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.right-top {
+    padding-bottom: 12px;
+}
+
+.contact-content .contact-input {
+    padding: 9px 8px 9px 0;
+    border: #000 1px solid;
+    opacity: 0.7;
+    padding: 8px;
+}
+
+.contact-footer {
+    background-color: #000;
+    color: #fff;
+    float: right;
+    
+}
+
+.contact-button {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 4px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.contact-button:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid;
+    width: 100%;
+}
+
+
+
+.map-section img {
+    width: 100%;
+}
+
+/* footer */
+
+.footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.footer .socials-list {
+    font-size: 24px;
+}
+
+.footer .socials-list a {
+    color: rgb(0,0,0,0.6);
+    text-decoration: none;
+}
+
+.footer .copy-right,
+.footer .socials-list a:hover {
+    color: rgb(0,0,0,0.4);
+}
+
+.footer .copy-right a,
+.footer .copy-right {
+    font-size: 15px;
+    color: rgb(0,0,0,0.6);
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
